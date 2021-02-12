@@ -42,6 +42,8 @@ Partial Class frmSalesTaxCalculator
         Me.txtItemCost = New System.Windows.Forms.TextBox()
         Me.txtItemName = New System.Windows.Forms.TextBox()
         Me.lblStore = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblItemName
@@ -225,11 +227,20 @@ Partial Class frmSalesTaxCalculator
         Me.lblStore.TabIndex = 23
         Me.lblStore.Text = "Draconismon Gaming"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(445, 85)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(310, 313)
+        Me.PictureBox1.TabIndex = 24
+        Me.PictureBox1.TabStop = False
+        '
         'frmSalesTaxCalculator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(771, 424)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblStore)
         Me.Controls.Add(Me.txtItemName)
         Me.Controls.Add(Me.txtItemCost)
@@ -252,6 +263,7 @@ Partial Class frmSalesTaxCalculator
         Me.Controls.Add(Me.lblItemName)
         Me.Name = "frmSalesTaxCalculator"
         Me.Text = "Sales Tax Calculator"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -277,4 +289,5 @@ Partial Class frmSalesTaxCalculator
     Friend WithEvents txtItemCost As TextBox
     Friend WithEvents txtItemName As TextBox
     Friend WithEvents lblStore As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
